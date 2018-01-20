@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div id="app">
+	<table>
+		<tr>
+			<td colspan="4"><input type="text" value="" id="ii" /></td>			
+		</tr>
+		<tr>
+			<td><input @click="en('1')" value="1" type="button"/></td>
+			<td><button>2</button></td>
+			<td><button>3</button></td>
+			<td><button @click="add()">+</button></td>
+		</tr>
+		<tr>
+			<td><button>4</button></td>
+			<td><button>5</button></td>
+			<td><button>6</button></td>
+			<td><button>-</button></td>
+		</tr>
+		<tr>
+			<td><button>7</button></td>
+			<td><button>8</button></td>
+			<td><button>9</button></td>
+			<td><button>*</button></td>
+		</tr>
+		<tr>
+			<td><button>.</button></td>
+			<td><button>0</button></td>
+			<td><button>=</button></td>
+			<td><button>/</button></td>
+		</tr>
+		<tr>
+			<td colspan="4"><button style="width: 150px;">c</button></td>
+		</tr>
+	</table>
+	
+</div>
+	<script src="./js/vue.js"></script>
+</body>
+</html>
+<script>
+	var te=document.getElementById("ii");
+	var vm=new Vue({
+		el:"#app",
+		data:{
+			
+		},
+		methods:{
+			en:function(e){
+				
+			  te.value=e
+			},
+			add:function(){
+				
+			}
+		}
+	})
+</script>
